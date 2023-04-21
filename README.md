@@ -26,7 +26,7 @@
 
 [question_12](https://github.com/Deriverx2/cppsem1/blob/main/lc1/q12_complex.cpp)
 
-## labcycle_2[[Questions](https://github.com/Deriverx2/cppsem1/blob/main/Questions/Lab%20Experiments%20-%20Set%201.pdf)]
+## labcycle_2[[Questions](https://github.com/Deriverx2/cppsem1/blob/main/Questions/Lab%20Experiments%20-%20Set%202.pdf)]
 
 [question_01](https://github.com/Deriverx2/cppsem1/blob/main/lc2/q01_vector.cpp)
 
@@ -44,7 +44,7 @@
 
 [question_08](https://github.com/Deriverx2/cppsem1/blob/main/lc2/q08_shapes.cpp)
 
-## labcycle_3[[Questions](https://github.com/Deriverx2/cppsem1/blob/main/Questions/Lab%20Experiments%20-%20Set%201.pdf)]
+## labcycle_3[[Questions](https://github.com/Deriverx2/cppsem1/blob/main/Questions/Lab%20Experiments%20-%20Set%203.pdf)]
 
 [question_01](https://github.com/Deriverx2/cppsem1/blob/main/lc3/q01_abstractclass.cpp)
 
