@@ -8,8 +8,8 @@ private:
     int row_mult(int, int, matrix, matrix);
 
 public:
-    void get_size(int,int);
-    void get_value(int,int,int);
+    void get_size(int, int);
+    void get_value(int, int, int);
     void display();
     void matrix_add(matrix, matrix);
     void matrix_mult(matrix, matrix);
@@ -27,8 +27,8 @@ int matrix::row_mult(int m, int n, matrix a, matrix b)
 
 void matrix::get_size(int m, int n)
 {
-    d1=m;
-    d2=n;
+    d1 = m;
+    d2 = n;
     p = new int *[d1];
     for (int i = 0; i < d1; i++)
         p[i] = new int[d2];
@@ -36,7 +36,7 @@ void matrix::get_size(int m, int n)
 
 void matrix::get_value(int i, int j, int value)
 {
-    p[i][j]=value;
+    p[i][j] = value;
 }
 
 void matrix::display()
@@ -122,36 +122,36 @@ void matrix::matrix_trace()
     }
     else
     {
-        std::cout<<"\nTrace cannot be determined";
+        std::cout << "\nTrace cannot be determined";
     }
 }
 
 int main()
 {
     matrix test1, test2, test3;
-    int m,n,val;
+    int m, n, val;
     std::cout << "Enter number of rows and coloumns of 1st matrix" << std::endl;
-    std::cin >> m>> n;
-    test1.get_size(m,n);
+    std::cin >> m >> n;
+    test1.get_size(m, n);
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
         {
             std::cout << "Element(" << i + 1 << "," << j + 1 << ")=";
             std::cin >> val;
-            test1.get_value(i,j,val);
+            test1.get_value(i, j, val);
         }
     test1.display();
     test3.matrix_transpose(test1);
     test1.matrix_trace();
     std::cout << "\nEnter number of rows and coloumns of 2nd matrix" << std::endl;
-    std::cin >> m>> n;
-    test2.get_size(m,n);
+    std::cin >> m >> n;
+    test2.get_size(m, n);
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
         {
             std::cout << "Element(" << i + 1 << "," << j + 1 << ")=";
             std::cin >> val;
-            test2.get_value(i,j,val);
+            test2.get_value(i, j, val);
         }
     test2.display();
     test3.matrix_transpose(test2);

@@ -1,5 +1,5 @@
 #include<iostream>
-class time
+class times
 {
     private:
         int hours;
@@ -7,17 +7,17 @@ class time
         int seconds;
     public:
         void input(void);
-        void add(time,time);
+        void add(times,times);
         void display(void);
 };
 
-void time::input(void)
+void times::input(void)
 {
     std::cout<<"\nEnter hours,minutes and seconds"<<std::endl;
     std::cin>>hours>>minutes>>seconds;
 } 
 
-void time::add(time t1,time t2)
+void times::add(times t1,times t2)
 {
     seconds=t1.seconds+t2.seconds;
     minutes=seconds/60;
@@ -28,19 +28,19 @@ void time::add(time t1,time t2)
     hours=t1.hours+t2.hours+hours;
 }
 
-void time::display(void)
+void times::display(void)
 {
     std::cout<<"\n"<<hours<<":Hours "<<minutes<<":Minutes "<<seconds<<":seconds "<<std::endl;
 }
 
 int main()
 {
-    time t1,t2,t3;
+    times t1,t2,t3;
     t1.input();
     t1.display();
     t2.input();
     t2.display();
-    std::cout<<"\nSum of first two entered time"<<std::endl;
+    std::cout<<"\nSum of first two entered time";
     t3.add(t1,t2);
     t3.display();
     return 0;
