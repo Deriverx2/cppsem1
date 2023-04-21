@@ -35,8 +35,7 @@ int main()
 {
 	int choice;
 	float value;
-	int flag=0;
-	while (flag==0)
+	do
 	{
 		std::cout<<"\nFinding area"<<std::endl;
 		std::cout<<"1.Type '1' for square."<<std::endl;
@@ -85,12 +84,11 @@ int main()
 				std::cout<<"Area of rhombus="<<value;
 				break;
 			case 6:
-				flag=1;
 				std::cout<<"Successfully exited\n";
 				break;
 			default:
 				std::cout<<"Invalid entry!!!\n";
 		}
-	}
+	}while(choice!=6);
 	return 0;
 }
