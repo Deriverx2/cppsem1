@@ -1,6 +1,6 @@
 # cppsem1
 
-##labcycle_1[To go to folder:[click here](https://github.com/Deriverx2/cppsem1/tree/main/lc1)]
+## labcycle_1[To go to folder:[click here](https://github.com/Deriverx2/cppsem1/tree/main/lc1)]
 
 [question_01](https://github.com/Deriverx2/cppsem1/blob/main/lc1/q01_students.cpp)
 
@@ -26,7 +26,7 @@
 
 [question_12](https://github.com/Deriverx2/cppsem1/blob/main/lc1/q12_complex.cpp)
 
-##labcycle_2[To go to folder:[click here](https://github.com/Deriverx2/cppsem1/tree/main/lc2)]
+## labcycle_2[To go to folder:[click here](https://github.com/Deriverx2/cppsem1/tree/main/lc2)]
 
 [question_01](https://github.com/Deriverx2/cppsem1/blob/main/lc2/q01_vector.cpp)
 
@@ -44,7 +44,7 @@
 
 [question_08](https://github.com/Deriverx2/cppsem1/blob/main/lc2/q08_shapes.cpp)
 
-##labcycle_3[To go to folder:[click here](https://github.com/Deriverx2/cppsem1/tree/main/lc3)]
+## labcycle_3[To go to folder:[click here](https://github.com/Deriverx2/cppsem1/tree/main/lc3)]
 
 [question_01](https://github.com/Deriverx2/cppsem1/blob/main/lc3/q01_abstractclass.cpp)
 
