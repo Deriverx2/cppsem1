@@ -70,7 +70,7 @@ int main()
 		a[i].input();
 		a[i].calcGrade();
 	}
-	std::cout << "\tMARKLIST"<<std::endl;
+	std::cout << "\tMARKLIST" << std::endl;
 	for (int i = 0; i < n; i++)
 	{
 		a[i].display();
@@ -78,7 +78,7 @@ int main()
 		{
 			std::cout << "-";
 		}
-		std::cout<< std::endl;
+		std::cout << std::endl;
 	}
 	return 0;
 }

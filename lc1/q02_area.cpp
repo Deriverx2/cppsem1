@@ -54,8 +54,8 @@ int main()
 				std::cout << "-";
 			}
 			int side;
-			std::cout << "\nSQUARE"<<std::endl;
-			std::cout<<"Enter side of square\n";
+			std::cout << "\nSQUARE" << std::endl;
+			std::cout << "Enter side of square\n";
 			std::cin >> side;
 			value = area(side);
 			std::cout << "Area of square=" << value << std::endl;
@@ -63,7 +63,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		case 2:
 			for (int j = 0; j < 35; j++)
@@ -71,7 +71,7 @@ int main()
 				std::cout << "-";
 			}
 			int width, breadth;
-			std::cout << "\nRECTANGLE"<<std::endl;
+			std::cout << "\nRECTANGLE" << std::endl;
 			std::cout << "Enter width and breadth of rectangle\n";
 			std::cin >> width >> breadth;
 			value = area(width, breadth);
@@ -80,7 +80,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		case 3:
 			for (int j = 0; j < 35; j++)
@@ -88,7 +88,7 @@ int main()
 				std::cout << "-";
 			}
 			int sid1, sid2, sid3;
-			std::cout << "\nTRIANGLE"<<std::endl;
+			std::cout << "\nTRIANGLE" << std::endl;
 			std::cout << "Enter 3 sides of triangle\n";
 			std::cin >> sid1 >> sid2 >> sid3;
 			value = area(sid1, sid2, sid3);
@@ -97,7 +97,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		case 4:
 			for (int j = 0; j < 35; j++)
@@ -105,7 +105,7 @@ int main()
 				std::cout << "-";
 			}
 			float radius;
-			std::cout << "\nCIRCLE"<<std::endl;
+			std::cout << "\nCIRCLE" << std::endl;
 			std::cout << "Enter radius of circle\n";
 			std::cin >> radius;
 			value = area(radius);
@@ -114,7 +114,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		case 5:
 			for (int j = 0; j < 35; j++)
@@ -122,7 +122,7 @@ int main()
 				std::cout << "-";
 			}
 			float diag1, diag2;
-			std::cout << "\nRHOMBUS"<<std::endl;
+			std::cout << "\nRHOMBUS" << std::endl;
 			std::cout << "Enter diagonals of rhombus\n";
 			std::cin >> diag1 >> diag2;
 			value = area(diag1, diag2);
@@ -131,7 +131,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		case 6:
 			for (int j = 0; j < 35; j++)
@@ -143,7 +143,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 			break;
 		default:
 			for (int j = 0; j < 35; j++)
@@ -155,7 +155,7 @@ int main()
 			{
 				std::cout << "-";
 			}
-			std::cout<< std::endl;
+			std::cout << std::endl;
 		}
 	} while (choice != 6);
 	return 0;
