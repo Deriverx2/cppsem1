@@ -49,6 +49,7 @@ void matrix::display()
             std::cout << p[i][j] << "\t";
         }
     }
+    std::cout << std::endl;
 }
 
 void matrix::matrix_add(matrix a, matrix b)
@@ -106,7 +107,6 @@ void matrix::matrix_transpose(matrix a)
         for (int j = 0; j < d2; j++)
             p[i][j] = a.p[j][i];
     }
-    display();
 }
 
 void matrix::matrix_trace()
@@ -118,11 +118,11 @@ void matrix::matrix_trace()
         {
             trace = trace + p[i][i];
         }
-        std::cout << "\nTrace of given matrix is " << trace;
+        std::cout << "\nTrace of given matrix is " << trace <<std::endl;
     }
     else
     {
-        std::cout << "\nTrace cannot be determined";
+        std::cout << "\nTrace cannot be determined" <<std::endl;
     }
 }
 
@@ -130,7 +130,12 @@ int main()
 {
     matrix test1, test2, test3;
     int m, n, val;
-    std::cout << "Enter number of rows and coloumns of 1st matrix" << std::endl;
+    for (int j = 0; j < 45; j++)
+    {
+        std::cout << "-";
+    }
+    std::cout<<"\nFirst matrix"<<std::endl;
+    std::cout << "Enter number of rows and coloumns" << std::endl;
     std::cin >> m >> n;
     test1.get_size(m, n);
     for (int i = 0; i < m; i++)
@@ -142,8 +147,14 @@ int main()
         }
     test1.display();
     test3.matrix_transpose(test1);
+    test3.display();
     test1.matrix_trace();
-    std::cout << "\nEnter number of rows and coloumns of 2nd matrix" << std::endl;
+    for (int j = 0; j < 45; j++)
+    {
+        std::cout << "-";
+    }
+    std::cout<<"\nSecond matrix"<<std::endl;
+    std::cout << "Enter number of rows and coloumns" << std::endl;
     std::cin >> m >> n;
     test2.get_size(m, n);
     for (int i = 0; i < m; i++)
@@ -155,8 +166,17 @@ int main()
         }
     test2.display();
     test3.matrix_transpose(test2);
+    test3.display();
     test2.matrix_trace();
+    for (int j = 0; j < 45; j++)
+    {
+        std::cout << "-";
+    }
     test3.matrix_add(test1, test2);
     test3.matrix_mult(test1, test2);
+    for (int j = 0; j < 45; j++)
+    {
+        std::cout << "-";
+    }
     return 0;
 }
