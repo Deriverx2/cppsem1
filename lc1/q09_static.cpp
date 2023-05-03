@@ -20,8 +20,8 @@ int ITEM::count;
 
 int main()
 {
-    int num;
-    ITEM a[10];
+    const int num=10;
+    ITEM a[num];
     int dot;
     int i=0;
     do
@@ -29,11 +29,12 @@ int main()
         std::cout<<"\nEnter '1' to create object"<<std::endl;
         std::cout<<"Enter '2' to show count"<<std::endl;
         std::cout<<"Enter '3' to exit"<<std::endl;
+        std::cout<<"Choice: ";
         std::cin>>dot;
         if(dot==1)
         {
             a[i];
-            std::cout<<"Object created";
+            std::cout<<"Object created"<<std::endl;
             a[i].get_data();
             i++;
         }
@@ -43,7 +44,7 @@ int main()
         }
         else if(dot==3)
         {
-            std::cout<<"You have successfully exited";
+            std::cout<<"You have successfully exited!!!";
         }
         else if(dot!=1 && dot!=2 && dot!=3)
         {
