@@ -40,25 +40,25 @@ complex complex::add(complex d1)
 void complex::display()
 {
     if (imag > 0)
-        std::cout << real << "+" << imag << "i";
+        std::cout << real << "+" << imag << "i"<<std::endl;
     else
-        std::cout << real << "-" << imag * -1 << "i";
+        std::cout << real << "-" << imag * -1 << "i"<<std::endl;
 }
 
 int main()
 {
     int m, n;
-    std::cout << "\nEnter real and imaginary part of complex number";
+    std::cout << "\nEnter real and imaginary part of complex number: ";
     std::cin >> m >> n;
     complex t1(m, n);
     std::cout << "\nFirst complex number =";
     t1.display();
-    std::cout << "\nEnter single value for real and imaginary part of complex number";
+    std::cout << "\nEnter single value for real and imaginary part of complex number: ";
     std::cin >> m;
     complex t2(m);
     std::cout << "\nSecond complex number =";
     t2.display();
-    std::cout << "\nComplex taking no arguments =";
+    std::cout << "\nComplex number taking no arguments =";
     complex t3;
     t3.display();
     complex sum = t1.add(t2);
