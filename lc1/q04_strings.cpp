@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <cstring>
 class strings
 {
@@ -27,11 +28,11 @@ void strings::input()
 void strings::compare(strings s1)
 {
     if (leng == s1.leng)
-        std::cout << "\nGiven strings are of same size ";
+        std::cout << "\nGiven strings are of same size " << std::endl;
     else if (leng > s1.leng)
-        std::cout << "\nFirst string is larger than second string";
+        std::cout << "\nFirst string is larger than second string" << std::endl;
     else
-        std::cout << "\nSecond string is larger than first string";
+        std::cout << "\nSecond string is larger than first string" << std::endl;
 }
 
 strings strings::concatenate(strings s1)
@@ -57,14 +58,22 @@ void strings::display()
 int main()
 {
     strings s1, s2, s3;
-    std::cout << "\nEnter first string" << std::endl;
+    std::cout << "\nEnter first string :";
     s1.input();
-    s1.length();
-    std::cout << "\nEnter second string" << std::endl;
+    std::cout << "\nEnter second string :";
     s2.input();
+    for (int j = 0; j < 35; j++)
+    {
+        std::cout << "-";
+    }
+    s1.length();
     s2.length();
     s1.compare(s2);
     s3 = s1.concatenate(s2);
     s3.length();
+    for (int j = 0; j < 35; j++)
+    {
+        std::cout << "-";
+    }
     return 0;
 }

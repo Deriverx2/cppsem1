@@ -42,6 +42,7 @@ void bank::set_data()
 	} while ((type != 1) && (type != 2));
 	balance = 0.0;
 	std::cout << "Your account has been successfully created." << std::endl;
+	std::cout << "NOTE: The created account require a minimum balnce of 500. Kindly deposit to use the account." << std::endl;
 }
 void bank::withdraw(int amount)
 {
@@ -75,7 +76,18 @@ int bank::get_no(int checkAccNo)
 {
 	if (acc_no == checkAccNo)
 	{
-		return 1;
+		char yes;
+		std::cout << "Name :\t" << cust_name << std::endl;
+		std::cout << "Type y to confirm:";
+		std::cin >> yes;
+		if (yes == 'y')
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
 	}
 	else
 	{
