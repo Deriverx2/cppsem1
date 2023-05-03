@@ -42,8 +42,11 @@ matrix::~matrix()
 int main()
 {
     int m, n, val;
-    std::cout << "Enter number of rows and coloumns of matrix" << std::endl;
-    std::cin >> m >> n;
+    std::cout << "\nMATRIX" << std::endl;
+    std::cout << "Enter number of rows :";
+    std::cin >> m;
+    std::cout << "Enter number of coloumns :";
+    std::cin >> n;
     matrix test(m, n);
     for (int i = 0; i < m; i++)
         for (int j = 0; j < n; j++)
@@ -52,6 +55,7 @@ int main()
             std::cin >> val;
             test.get_element(i, j, val);
         }
+    std::cout << std::endl;
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
