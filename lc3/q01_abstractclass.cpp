@@ -44,16 +44,29 @@ int main()
     int a;
     Shape *shape1;
     Shape *shape2;
-    std::cout << "Enter side of square";
+    for (int i = 0; i < 35; i++)
+    {
+        std::cout << "-";
+    }
+    std::cout << "\nEnter side of square :";
     std::cin >> a;
     square squa(a);
-    std::cout << "Enter radius of circle";
+    std::cout << "\nEnter radius of circle :";
     std::cin >> a;
+    for (int i = 0; i < 35; i++)
+    {
+        std::cout << "-";
+    }
     Circle cir(a);
     shape1 = &squa;
     shape2 = &cir;
-
-    cout << "Area of square: " << shape1->area() << endl;
-    cout << "Area of Circle: " << shape2->area() << endl;
+    cout << "\nArea of square: " << shape1->area()
+         << endl;
+    cout << "\nArea of Circle: " << shape2->area()
+         << endl;
+    for (int i = 0; i < 35; i++)
+    {
+        std::cout << "-";
+    }
     return 0;
 }

@@ -14,14 +14,19 @@ public:
         }
         else
         {
-            std::cout << "Quotient is " << p / q;
+            std::cout << "\nQuotient is " << p / q;
+            std::cout << "\nReminder is " << p % q << std::endl;
         }
     }
 };
 int main()
 {
     int x, y;
-    std::cout << "Enter numerator and denominator:";
+    for (int i = 0; i < 50; i++)
+    {
+        std::cout << "-";
+    }
+    std::cout << "\nEnter numerator and denominator:";
     std::cin >> x >> y;
     division d(x, y);
     try
@@ -30,7 +35,11 @@ int main()
     }
     catch (const char *message)
     {
-        std::cout << "Error! " << message;
+        std::cout << "\nError! " << message << std::endl;
+    }
+    for (int i = 0; i < 50; i++)
+    {
+        std::cout << "-";
     }
     return 0;
 }
