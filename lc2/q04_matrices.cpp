@@ -28,7 +28,7 @@ public:
             {
                 std::cout << matrix[i][j] << "\t";
             }
-            std::cout << "\n";
+            std::cout << std::endl;
         }
     }
     void operator+(const Matrices &matr)
@@ -87,27 +87,31 @@ public:
 int main()
 {
     int row, column, comp;
+    std::cout << "\nFIRST MATRIX" << std::endl;
     std::cout << "Enter row and column of matrix: ";
     std::cin >> row >> column;
     Matrices A1(row, column);
-    std::cout << "Enter values of matrix: \n";
+    std::cout << "Enter values of matrix" << std::endl;
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
         {
+            std::cout << "Element(" << i + 1 << "," << j + 1 << ")=";
             std::cin >> comp;
             A1.getmatrix(i, j, comp);
         }
     }
     A1.display();
+    std::cout << "\nSECOND MATRIX" << std::endl;
     std::cout << "Enter row and column of matrix: ";
     std::cin >> row >> column;
     Matrices A2(row, column);
-    std::cout << "Enter values of matrix: \n";
+    std::cout << "Enter values of matrix" << std::endl;
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
         {
+            std::cout << "Element(" << i + 1 << "," << j + 1 << ")=";
             std::cin >> comp;
             A2.getmatrix(i, j, comp);
         }

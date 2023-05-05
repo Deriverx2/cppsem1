@@ -8,11 +8,11 @@ private:
 public:
     alpha(int x) : alpha_value(x)
     {
-        cout << "alpha has been constructed" << endl;
+        cout << "\nalpha has been constructed" << endl;
     }
     void showalpha()
     {
-        cout << "alpha value = " << alpha_value << endl;
+        cout << "\nalpha value = " << alpha_value << endl;
     }
 };
 class beta
@@ -23,11 +23,11 @@ private:
 public:
     beta(float y) : beta_value(y)
     {
-        cout << "beta has been constructed" << endl;
+        cout << "\nbeta has been constructed" << endl;
     }
     void showbeta()
     {
-        cout << "beta value = " << beta_value << endl;
+        cout << "\nbeta value = " << beta_value << endl;
     }
 };
 class gamma : public beta, public alpha
@@ -39,22 +39,22 @@ public:
     gamma(int a, float b, int c) : alpha(a), beta(b)
     {
         gamma_value = c;
-        cout << "gamma has been constructed" << endl;
+        cout << "\ngamma has been constructed" << endl;
     }
     void showgamma()
     {
-        cout << "gamma value = " << gamma_value << endl;
+        cout << "\ngamma value = " << gamma_value << endl;
     }
 };
 int main()
 {
     int i, k;
     float j;
-    cout << "Enter integer values for class alpha: ";
+    cout << "\nEnter integer values for class alpha: ";
     cin >> i;
-    cout << "Enter float values for class beta: ";
+    cout << "\nEnter float values for class beta: ";
     cin >> j;
-    cout << "Enter integer values for class gamma: ";
+    cout << "\nEnter integer values for class gamma: ";
     cin >> k;
     gamma g(i, j, k);
     g.showalpha();

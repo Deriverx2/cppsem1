@@ -37,8 +37,8 @@ protected:
     std::string ibase_value;
 
 public:
-    IBase(const std::string &value1, const std::string &value2, const std::string &value3) : Base1(value1),
-                                                                                             Base2(value2)
+    IBase(const std::string &value1, const std::string &value2,
+          const std::string &value3) : Base1(value1), Base2(value2)
     {
         ibase_value = value3;
     }
@@ -69,18 +69,22 @@ public:
 int main()
 {
     std::string a, b, c, d;
-    std::cout << "Enter data for base class 1: ";
+    std::cout << "\nEnter data for base class1: ";
     std::cin >> a;
-    std::cout << "Enter data for base class 2: ";
+    std::cout << "Enter data for base class2: ";
     std::cin >> b;
     std::cout << "Enter data for intermediate class: ";
     std::cin >> c;
-    std::cout << "Multiple Inheritance" << std::endl;
+    std::cout << "\nMultiple Inheritance" << std::endl;
+    std::cout << "Function of intermediate class is invoked" << std::endl;
+    std::cout << "Intermediate class inherits base class1 and base class2" << std::endl;
     IBase obji(a, b, c);
     obji.display_ibase();
     std::cout << "\nEnter data for derived class: ";
     std::cin >> d;
-    std::cout << "Multilevel Inheritance" << std::endl;
+    std::cout << "\nMultilevel Inheritance" << std::endl;
+    std::cout << "Function of derived class is invoked" << std::endl;
+    std::cout << "Derived class inherits intermediate class" << std::endl;
     Derived objd(a, b, c, d);
     objd.display();
     return 0;

@@ -14,7 +14,9 @@ public:
     vector(int i, int j, int k) : icomp(i), jcomp(j), kcomp(k) {}
     void display()
     {
-        std::cout << icomp << "i" << checksign(jcomp) << jcomp << "j" << checksign(kcomp) << kcomp << "k";
+        std::cout << icomp << "i" << checksign(jcomp)
+                  << jcomp << "j" << checksign(kcomp)
+                  << kcomp << "k" << std::endl;
     }
     float findmag()
     {
@@ -67,10 +69,10 @@ int main()
         switch (choice)
         {
         case 1:
-            std::cout << "Enter the components of first vector: ";
+            std::cout << "Enter 3 components of first vector: ";
             std::cin >> a1 >> a2 >> a3;
             v1 = vector(a1, a2, a3);
-            std::cout << "Enter the components of second vector: ";
+            std::cout << "Enter 3 components of second vector: ";
             std::cin >> a1 >> a2 >> a3;
             v2 = vector(a1, a2, a3);
             break;

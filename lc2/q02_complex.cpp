@@ -35,7 +35,7 @@ int main()
     int choice = 0;
     do
     {
-        std::cout << "1. Input values of complex number" << std::endl;
+        std::cout << "\n1. Input values of complex number" << std::endl;
         std::cout << "2. Multiply complex numbers" << std::endl;
         std::cout << "3. Add complex numbers" << std::endl;
         std::cout << "4. Exit" << std::endl;

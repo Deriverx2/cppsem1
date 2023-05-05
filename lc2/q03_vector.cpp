@@ -14,7 +14,7 @@ public:
     vector(int i, int j, int k) : icomp(i), jcomp(j), kcomp(k) {}
     friend std::istream &operator>>(std::istream &in, vector &v)
     {
-        std::cout << "Enter the components of vector: ";
+        std::cout << "\nEnter 3 components <x,y,z> of vector: ";
         in >> v.icomp >> v.jcomp >> v.kcomp;
         return in;
     }
@@ -41,10 +41,10 @@ int main()
 {
     vector v1, v2, v3;
     std::cin >> v1;
-    std::cout << "First vector: " << v1 << std::endl;
+    std::cout << "\nFirst vector: " << v1 << std::endl;
     std::cin >> v2;
-    std::cout << "Second vector: " << v2 << std::endl;
+    std::cout << "\nSecond vector: " << v2 << std::endl;
     v3 = v1 * v2;
-    std::cout << "Dot product of the two vectors is " << v3 << std::endl;
+    std::cout << "\nDot product of the two vectors is " << v3 << std::endl;
     return 0;
 }

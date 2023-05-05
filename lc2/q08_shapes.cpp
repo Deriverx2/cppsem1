@@ -52,6 +52,7 @@ public:
         std::cout << "Area of ellipse: " << amount << std::endl;
     }
 };
+
 class Rectangle : public Shapes
 {
 private:
@@ -70,19 +71,19 @@ int main()
 {
     float len[2];
     Shapes *shape[4];
-    std::cout << "Enter radius of circle: ";
+    std::cout << "\nEnter radius of circle: ";
     std::cin >> len[0];
     shape[0] = new Circle(len[0]);
     shape[0]->area();
-    std::cout << "Enter side of square: ";
+    std::cout << "\nEnter side of square: ";
     std::cin >> len[0];
     shape[1] = new Square(len[0]);
     shape[1]->area();
-    std::cout << "Enter major and minor axis of ellipse: ";
+    std::cout << "\nEnter major and minor axis of ellipse: ";
     std::cin >> len[0] >> len[1];
     shape[2] = new Ellipse(len[0], len[1]);
     shape[2]->area();
-    std::cout << "Enter length and breadth of rectangle: ";
+    std::cout << "\nEnter length and breadth of rectangle: ";
     std::cin >> len[0] >> len[1];
     shape[3] = new Rectangle(len[0], len[1]);
     shape[3]->area();
