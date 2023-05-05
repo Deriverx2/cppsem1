@@ -28,26 +28,40 @@ complex add(complex d1, complex d2)
 void complex::display()
 {
     if (imag>0)
-        std::cout<<real<<"+"<<imag<<"i";
+        std::cout<<real<<"+"<<imag<<"i"<<std::endl;
     else
-        std::cout<<real<<"-"<<imag*-1<<"i";
+        std::cout<<real<<"-"<<imag*-1<<"i"<<std::endl;
 }
 
 int main()
 {
     int m,n;
-    std::cout<<"\nEnter real and imaginary part of complex number";
+    for (int j = 0; j < 50; j++)
+    {
+        std::cout << "-";
+    }
+    std::cout<<"\nFirst complex number"<<std::endl;
+    std::cout<<"Enter real and imaginary part :";
     std::cin>>m>>n;
     complex t1(m,n);
-    std::cout<<"First complex number=";
-    t1.display();
-    std::cout<<"\nEnter real and imaginary part of complex number";
+    std::cout<<"\nSecond complex number"<<std::endl;
+    std::cout<<"Enter real and imaginary part :";
     std::cin>>m>>n;
     complex t2(m,n);
-    std::cout<<"Second complex number=";
+    for (int j = 0; j < 50; j++)
+    {
+        std::cout << "-";
+    }
+    std::cout<<"\nZ1=";
+    t1.display();
+    std::cout<<"Z2=";
     t2.display();
     complex sum=add(t1,t2);
     std::cout<<"\nSum=";
     sum.display();
+    for (int j = 0; j < 50; j++)
+    {
+        std::cout << "-";
+    }
     return 0;
 }

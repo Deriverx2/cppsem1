@@ -39,6 +39,7 @@ void store::del_item(std::string dcode)
     {
         if (dcode == code[i])
         {
+            std::cout << "Item " << name[i] << " has been erased" << std::endl;
             for (int j = i; j < icount - 1; j++)
             {
                 code[j] = code[j + 1];
@@ -113,7 +114,7 @@ int main()
     int choice;
     do
     {
-        std::cout << "Enter 1 for add items to shop" << std::endl;
+        std::cout << "\nEnter 1 for add items to shop" << std::endl;
         std::cout << "Enter 2 to remove items from shop" << std::endl;
         std::cout << "Enter 3 to display items in shop" << std::endl;
         std::cout << "Enter 4 to add to cart" << std::endl;
@@ -122,6 +123,10 @@ int main()
         std::cout << "Enter 7 to exit" << std::endl;
         std::cout << "Your choice ";
         std::cin >> choice;
+        for (int j = 0; j < 50; j++)
+        {
+            std::cout << "-";
+        }
         switch (choice)
         {
         case 1:
@@ -135,24 +140,23 @@ int main()
             Item.del_item(code);
             break;
         case 3:
-            std::cout << "\n--------------------ITEM MENU--------------------" << std::endl;
+            
+            std::cout << "\n------------------ITEM MENU------------------" << std::endl;
             std::cout << "S.no.\tCode\tName\tPrice\tQuantity" << std::endl;
             Item.display();
-            std::cout << std::endl
-                      << std::endl;
             break;
         case 4:
-            std::cout << "Enter code and quantity of item\n";
+            std::cout << "\nEnter code and quantity of item\n";
             std::cin >> code >> amount;
             cart[ccart].purchase(Item, code, amount);
             break;
         case 5:
-            std::cout << "Enter code of item to remove";
+            std::cout << "\nEnter code of item to remove";
             std::cin >> code;
             cart[ccart].del_item(code);
             break;
         case 6:
-            std::cout << "\n--------------------Cart--------------------" << std::endl;
+            std::cout << "\n------------------Cart------------------" << std::endl;
             std::cout << "S.no.\tCode\tName\tPrice\tQuantity" << std::endl;
             cart[ccart].display();
             std::cout << std::endl
@@ -168,10 +172,14 @@ int main()
             }
             break;
         case 7:
-            std::cout << "Thank You, for using the code!";
+            std::cout << "\nThank You, for using the code!" << std::endl;
             break;
         default:
             std::cout << "\nEnter a valid choice" << std::endl;
+        }
+        for (int j = 0; j < 50; j++)
+        {
+            std::cout << "-";
         }
     } while (choice != 7);
     return 0;

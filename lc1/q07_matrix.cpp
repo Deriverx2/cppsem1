@@ -118,11 +118,11 @@ void matrix::matrix_trace()
         {
             trace = trace + p[i][i];
         }
-        std::cout << "\nTrace of given matrix is " << trace <<std::endl;
+        std::cout << "\nTrace of given matrix is " << trace << std::endl;
     }
     else
     {
-        std::cout << "\nTrace cannot be determined" <<std::endl;
+        std::cout << "\nTrace cannot be determined" << std::endl;
     }
 }
 
@@ -134,7 +134,7 @@ int main()
     {
         std::cout << "-";
     }
-    std::cout<<"\nFirst matrix"<<std::endl;
+    std::cout << "\nFirst matrix" << std::endl;
     std::cout << "Enter number of rows and coloumns" << std::endl;
     std::cin >> m >> n;
     test1.get_size(m, n);
@@ -153,7 +153,7 @@ int main()
     {
         std::cout << "-";
     }
-    std::cout<<"\nSecond matrix"<<std::endl;
+    std::cout << "\nSecond matrix" << std::endl;
     std::cout << "Enter number of rows and coloumns" << std::endl;
     std::cin >> m >> n;
     test2.get_size(m, n);

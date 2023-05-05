@@ -39,7 +39,7 @@ complex complex::add(complex d1)
 
 void complex::display()
 {
-    if (imag > 0)
+    if (imag >= 0)
         std::cout << real << "+" << imag << "i"<<std::endl;
     else
         std::cout << real << "-" << imag * -1 << "i"<<std::endl;
